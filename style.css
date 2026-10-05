@@ -1,0 +1,141 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #172554;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section,
+article {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    color: #172554;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Links and buttons */
+a {
+    color: #0645ad;
+}
+
+button {
+    background: #172554;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover,
+button:focus {
+    background: #0f3a8a;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus,
+button:focus,
+nav a:focus {
+    outline: 3px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
